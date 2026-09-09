@@ -60,4 +60,3 @@ This project is licensed under the MIT License.
 =======
 # Tenants-for-Justice
 App/Website for tenants to easily put together an entire case against not so great landlords/realty management teams.
->>>>>>> b8516dbd7ea3b5129ecf7da526da1865dbff2eb4
