@@ -1,0 +1,78 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        {% block title %}Tenants for Justice{% endblock %}
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="{% static 'core/css/style.css' %}?v=2"
+    >
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="navbar">
+            <a class="brand" href="{% url 'home' %}">
+                Tenants for Justice
+            </a>
+
+            <div class="nav-menu">
+                <a class="nav-link" href="{% url 'resources' %}">
+                    Resources
+
+                </a>
+
+                <a class="nav-link" href="{% url 'about' %}">
+                    About
+                </a>
+
+                {% if user.is_authenticated %}
+                    <a class="nav-link" href="{% url 'dashboard' %}">
+                        My Dashboard
+                    </a>
+
+                    <form
+                        action="{% url 'logout' %}"
+                        method="post"
+                        class="inline-form"
+                    >
+                        {% csrf_token %}
+
+                        <button class="nav-button" type="submit">
+                            Log out
+                        </button>
+                    </form>
+                {% else %}
+                    <a class="nav-link" href="{% url 'login' %}">
+                        Log in
+                    </a>
+
+                    <a class="nav-cta" href="{% url 'signup' %}">
+                        Create account
+                    </a>
+                {% endif %}
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Tenants for Justice</p>
+    </footer>
+</body>
+</html>
