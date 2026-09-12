@@ -1,1 +1,65 @@
-{% extends "base.html" %}{% block title %}Tenant Resources | Tenants for Justice{% endblock %}{% block content %}<section class="page-shell narrow"><p class="eyebrow">Reliable starting points</p><h1>Tenant resources</h1><p class="lead">Use official and nonprofit sources to understand options. Confirm deadlines and legal requirements with a qualified professional.</p><div class="resource-list"><article class="feature-card"><h2>Urgent danger</h2><p>Call 911 for immediate danger. Contact the appropriate local emergency or code-enforcement agency for urgent property conditions.</p></article><article class="feature-card"><h2>Legal help</h2><p>Look for a licensed housing attorney or local legal-aid organization. Bring your timeline, notices, communications, photographs, reports, lease, and payment records.</p></article><article class="feature-card"><h2>Documentation</h2><p>Record dates, exact statements, witnesses, delivery methods, and follow-up. Preserve original files and avoid altering source evidence.</p></article></div></section>{% endblock %}
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+Tenant Resources | Tenants for Justice
+{% endblock %}
+
+{% block content %}
+<div class="resources-page-background">
+
+    <section
+        class="page-hero resources-hero"
+        aria-label="Legal research library"
+    >
+        <div class="page-hero-content">
+            <p class="eyebrow">Reliable starting points</p>
+
+            <h1>Tenant resources</h1>
+
+            <p class="hero-description">
+                Use official and nonprofit sources to understand your options.
+                Confirm deadlines and legal requirements with a qualified
+                professional.
+            </p>
+        </div>
+    </section>
+
+    <section class="resources-content">
+        <div class="resource-list">
+
+            <article class="feature-card">
+                <h2>Urgent Danger</h2>
+
+                <p>
+                    Call 911 for immediate danger. Contact the appropriate
+                    local emergency or code-enforcement agency for urgent
+                    property conditions.
+                </p>
+            </article>
+
+            <article class="feature-card">
+                <h2>Legal Help</h2>
+
+                <p>
+                    Look for a licensed housing attorney or local legal-aid
+                    organization. Bring your timeline, notices, communications,
+                    photographs, reports, lease, and payment records.
+                </p>
+            </article>
+
+            <article class="feature-card">
+                <h2>Documentation</h2>
+
+                <p>
+                    Record dates, exact statements, witnesses, delivery
+                    methods, and follow-up. Preserve original files and avoid
+                    altering source evidence.
+                </p>
+            </article>
+
+        </div>
+    </section>
+
+</div>
+{% endblock %}

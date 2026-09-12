@@ -46,6 +46,38 @@ This project is planned as a mobile-first Django web application using:
 
 This project is currently in the planning and initial development stage.
 
+## Website Preview
+
+### Home
+
+The landing page introduces the platform’s purpose and guides tenants toward creating and organizing a housing case.
+
+![Tenants for Justice home page](screenshots/homepage(2).png)
+
+### Tenant Resources
+
+The Resources page provides clear starting points for urgent conditions, legal assistance, and evidence documentation.
+
+![Tenants for Justice resources page](screenshots/resourcespage.png)
+
+### About
+
+The About page explains the platform’s mission to help tenants transform scattered evidence into a clear and organized record.
+
+![Tenants for Justice about page](screenshots/aboutpage.png)
+
+### Returning User Login
+
+Returning users can securely access their workspace and continue collaborating on their organized case materials.
+
+![Tenants for Justice login page](screenshots/loginpage.png)
+
+### Create an Account
+
+New users can create a private workspace to document housing conditions, preserve evidence, and build a chronological case record.
+
+![Tenants for Justice create account page](screenshots/createaccountpage.png)
+
 ## Important Disclaimer
 
 Tenants for Justice will provide general legal information and organizational tools. It is not a law firm, does not provide legal advice, and does not create an attorney-client relationship. Users should consult a qualified attorney or appropriate legal-aid organization regarding their individual circumstances.

@@ -1,0 +1,11 @@
+{% extends "base.html" %}{% block title %}Log in | Tenants for Justice{% endblock %}{% block content %}<section
+    class="form-shell">
+    <div class="form-card">
+        <p class="eyebrow">Welcome back</p>
+        <h1>Log in</h1>
+        <form method="post">{% csrf_token %}{{ form.as_p }}{% if next %}<input type="hidden" name="next"
+                value="{{ next }}">{% endif %}<button class="button button-primary" type="submit">Log in</button></form>
+        <p class="form-note">New here? <a href="{% url 'signup' %}">Create an account</a>.</p>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block title %}Create Account | Tenants for Justice{% endblock %}
+
+{% block content %}
+<section class="signup-page">
+    <div class="signup-message">
+        <p class="eyebrow">Your path starts here</p>
+
+        <h1>On the way to leveling the scales of justice…</h1>
+
+        <p>
+            Create a private workspace where you can organize your housing
+            case, preserve evidence, and build a clear timeline.
+        </p>
+    </div>
+
+    <div class="signup-card">
+        <p class="eyebrow">Your private workspace</p>
+        <h2>Create your account</h2>
+
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+
+            <button class="button button-primary" type="submit">
+                Create account
+            </button>
+        </form>
+
+        <p class="form-note">
+            Already registered?
+            <a href="{% url 'login' %}">Log in</a>.
+        </p>
+    </div>
+</section>
+{% endblock %}

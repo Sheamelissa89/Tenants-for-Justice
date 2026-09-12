@@ -61,9 +61,51 @@ a {
     padding: 4.5rem 1.25rem;
 }
 
+.hero-home {
+    min-height: 620px;
+    display: grid;
+    align-items: center;
+    background:
+        linear-gradient(90deg, rgba(8, 20, 40, .96) 0%, rgba(12, 31, 55, .8) 45%, rgba(12, 31, 55, .22) 100%),
+        url("../images/homepageimage.png") center / cover no-repeat;
+}
+
 .hero-content {
     max-width: 850px;
     margin: auto;
+}
+
+.hero-home .hero-content {
+    width: min(1100px, 100%);
+}
+
+.page-hero {
+    min-height: 440px;
+    display: grid;
+    align-items: center;
+    padding: 4rem 1.25rem;
+    color: var(--white);
+}
+
+.page-hero-resources {
+    background:
+        linear-gradient(90deg, rgba(8, 20, 40, .94), rgba(12, 31, 55, .56)),
+        url("../images/resourcespageimage.png") center / cover no-repeat;
+}
+
+.page-hero-about {
+    background:
+        linear-gradient(90deg, rgba(8, 20, 40, .94), rgba(12, 31, 55, .5)),
+        url("../images/casetimelinepageimage.png") center / cover no-repeat;
+}
+
+.page-hero-content {
+    width: min(1100px, 100%);
+    margin: auto;
+}
+
+.page-hero h1 {
+    color: var(--white);
 }
 
 .eyebrow {
@@ -391,6 +433,21 @@ footer p {
     max-width: 720px;
 }
 
+.login-page {
+    min-height: calc(100vh - 145px);
+    display: grid;
+    align-items: center;
+    padding: 4rem 1.25rem;
+    background:
+        linear-gradient(90deg, rgba(8, 18, 38, .4), rgba(8, 18, 38, .9)),
+        url("../images/loginpageimage.png") center / cover no-repeat;
+}
+
+.login-page .form-card {
+    width: min(480px, 100%);
+    margin: 0 max(0px, calc((100vw - 1100px) / 2)) 0 auto;
+}
+
 .form-card {
     margin-top: 1rem;
     padding: clamp(1.25rem, 5vw, 2.5rem);
@@ -448,6 +505,16 @@ footer p {
 }
 
 @media (max-width: 699px) {
+    .hero-home,
+    .page-hero {
+        min-height: 520px;
+        background-position: center;
+    }
+
+    .login-page {
+        background-position: 62% center;
+    }
+
     .navbar {
         align-items: flex-start;
     }
@@ -586,4 +653,140 @@ footer p {
         grid-row: 1;
         justify-self: end;
     }
+}
+/* Full-page Home background */
+
+.home-page-background {
+    min-height: 100vh;
+    background:
+        linear-gradient(
+            rgba(8, 20, 40, 0.25),
+            rgba(8, 20, 40, 0.25)
+        ),
+        url("../images/homepageimage.png") center / cover fixed no-repeat;
+}
+
+.home-page-background .hero-home {
+    background: linear-gradient(
+        90deg,
+        rgba(8, 20, 40, 0.92) 0%,
+        rgba(12, 31, 55, 0.68) 48%,
+        rgba(12, 31, 55, 0.22) 100%
+    );
+}
+
+.home-page-background .section {
+    background: rgba(247, 248, 250, 0.72);
+    backdrop-filter: blur(2px);
+}
+
+.home-page-background .feature-card {
+    background: rgba(255, 255, 255, 0.88);
+}
+
+.home-page-background .help-section {
+    background: rgba(20, 33, 61, 0.84);
+}
+
+.home-page-background .disclaimer {
+    background: rgba(234, 242, 255, 0.82);
+}
+/* Full-page Resources background */
+
+.resources-page-background {
+    min-height: 100vh;
+    background:
+        linear-gradient(
+            rgba(8, 20, 40, 0.18),
+            rgba(8, 20, 40, 0.28)
+        ),
+        url("../images/resourcespageimage.png") center / cover fixed no-repeat;
+}
+
+.resources-hero {
+    min-height: 520px;
+    display: grid;
+    align-items: center;
+    padding: 4rem 1.25rem;
+    color: var(--white);
+    background: linear-gradient(
+        90deg,
+        rgba(8, 20, 40, 0.94) 0%,
+        rgba(12, 31, 55, 0.70) 48%,
+        rgba(12, 31, 55, 0.20) 100%
+    );
+}
+
+.resources-hero h1 {
+    color: var(--white);
+}
+
+.resources-content {
+    padding: 4rem 1.25rem;
+    background: rgba(247, 248, 250, 0.72);
+    backdrop-filter: blur(2px);
+}
+
+.resources-content .resource-list {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.resources-content .feature-card {
+    margin-bottom: 1.25rem;
+    background: rgba(255, 255, 255, 0.90);
+    border: 1px solid rgba(220, 226, 232, 0.85);
+}
+/* Full-page About background */
+
+.about-page-background {
+    min-height: 100vh;
+    background:
+        linear-gradient(
+            rgba(8, 20, 40, 0.16),
+            rgba(8, 20, 40, 0.28)
+        ),
+        url("../images/casetimelinepageimage.png") center / cover fixed no-repeat;
+}
+
+.about-hero {
+    min-height: 540px;
+    display: grid;
+    align-items: center;
+    padding: 4rem 1.25rem;
+    color: var(--white);
+    background: linear-gradient(
+        90deg,
+        rgba(8, 20, 40, 0.95) 0%,
+        rgba(12, 31, 55, 0.72) 48%,
+        rgba(12, 31, 55, 0.18) 100%
+    );
+}
+
+.about-hero h1 {
+    color: var(--white);
+}
+
+.about-content {
+    min-height: 500px;
+    padding: 4rem 1.25rem;
+    background: rgba(247, 248, 250, 0.68);
+    backdrop-filter: blur(2px);
+}
+
+.about-content-inner {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.about-content .summary-card {
+    margin-bottom: 1.5rem;
+    background: rgba(255, 255, 255, 0.90);
+}
+
+.about-content .disclaimer {
+    max-width: none;
+    padding: 2rem;
+    background: rgba(234, 242, 255, 0.90);
+    border-radius: 0.75rem;
 }
