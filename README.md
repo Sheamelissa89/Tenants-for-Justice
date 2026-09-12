@@ -52,7 +52,7 @@ This project is currently in the planning and initial development stage.
 
 The landing page introduces the platform’s purpose and guides tenants toward creating and organizing a housing case.
 
-![Tenants for Justice home page](screenshots/homepage(2).png)
+![Tenants for Justice home page](screenshots/homepage.png)
 
 ### Tenant Resources
 
